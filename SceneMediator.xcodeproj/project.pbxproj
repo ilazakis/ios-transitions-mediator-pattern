@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2483ABA192BC5DB00F445BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2483AB9192BC5DB00F445BB /* Foundation.framework */; };
+		D2483ABC192BC5DB00F445BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2483ABB192BC5DB00F445BB /* CoreGraphics.framework */; };
+		D2483ABE192BC5DB00F445BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2483ABD192BC5DB00F445BB /* UIKit.framework */; };
+		D2483AC4192BC5DB00F445BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2483AC2192BC5DB00F445BB /* InfoPlist.strings */; };
+		D2483AC6192BC5DB00F445BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2483AC5192BC5DB00F445BB /* main.m */; };
+		D2483ACA192BC5DB00F445BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2483AC9192BC5DB00F445BB /* AppDelegate.m */; };
+		D2483ACD192BC5DB00F445BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2483ACB192BC5DB00F445BB /* Main.storyboard */; };
+		D2483AD0192BC5DB00F445BB /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = D2483ACF192BC5DB00F445BB /* ViewControllerA.m */; };
+		D2483AD2192BC5DB00F445BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2483AD1192BC5DB00F445BB /* Images.xcassets */; };
+		D2483AD9192BC5DC00F445BB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2483AD8192BC5DC00F445BB /* XCTest.framework */; };
+		D2483ADA192BC5DC00F445BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2483AB9192BC5DB00F445BB /* Foundation.framework */; };
+		D2483ADB192BC5DC00F445BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2483ABD192BC5DB00F445BB /* UIKit.framework */; };
+		D2483AE3192BC5DC00F445BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2483AE1192BC5DC00F445BB /* InfoPlist.strings */; };
+		D2483AE5192BC5DC00F445BB /* SceneMediatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2483AE4192BC5DC00F445BB /* SceneMediatorTests.m */; };
+		D2483AF0192BC8BA00F445BB /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = D2483AEF192BC8BA00F445BB /* ViewControllerB.m */; };
+		D2483AF3192BC8CD00F445BB /* ViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2483AF2192BC8CD00F445BB /* ViewControllerC.m */; };
+		D2483AF61933D06900F445BB /* SceneMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D2483AF51933D06900F445BB /* SceneMediator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2483ADC192BC5DC00F445BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2483AAE192BC5DB00F445BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2483AB5192BC5DB00F445BB;
+			remoteInfo = SceneMediator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2483AB6192BC5DB00F445BB /* SceneMediator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneMediator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2483AB9192BC5DB00F445BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2483ABB192BC5DB00F445BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2483ABD192BC5DB00F445BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2483AC1192BC5DB00F445BB /* SceneMediator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SceneMediator-Info.plist"; sourceTree = "<group>"; };
+		D2483AC3192BC5DB00F445BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2483AC5192BC5DB00F445BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2483AC7192BC5DB00F445BB /* SceneMediator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SceneMediator-Prefix.pch"; sourceTree = "<group>"; };
+		D2483AC8192BC5DB00F445BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2483AC9192BC5DB00F445BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2483ACC192BC5DB00F445BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2483ACE192BC5DB00F445BB /* ViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
+		D2483ACF192BC5DB00F445BB /* ViewControllerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
+		D2483AD1192BC5DB00F445BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D2483AD7192BC5DC00F445BB /* SceneMediatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneMediatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2483AD8192BC5DC00F445BB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D2483AE0192BC5DC00F445BB /* SceneMediatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SceneMediatorTests-Info.plist"; sourceTree = "<group>"; };
+		D2483AE2192BC5DC00F445BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2483AE4192BC5DC00F445BB /* SceneMediatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneMediatorTests.m; sourceTree = "<group>"; };
+		D2483AEE192BC8BA00F445BB /* ViewControllerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
+		D2483AEF192BC8BA00F445BB /* ViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
+		D2483AF1192BC8CD00F445BB /* ViewControllerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerC.h; sourceTree = "<group>"; };
+		D2483AF2192BC8CD00F445BB /* ViewControllerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerC.m; sourceTree = "<group>"; };
+		D2483AF41933D06900F445BB /* SceneMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneMediator.h; sourceTree = "<group>"; };
+		D2483AF51933D06900F445BB /* SceneMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneMediator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2483AB3192BC5DB00F445BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2483ABC192BC5DB00F445BB /* CoreGraphics.framework in Frameworks */,
+				D2483ABE192BC5DB00F445BB /* UIKit.framework in Frameworks */,
+				D2483ABA192BC5DB00F445BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2483AD4192BC5DC00F445BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2483AD9192BC5DC00F445BB /* XCTest.framework in Frameworks */,
+				D2483ADB192BC5DC00F445BB /* UIKit.framework in Frameworks */,
+				D2483ADA192BC5DC00F445BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2483AAD192BC5DB00F445BB = {
+			isa = PBXGroup;
+			children = (
+				D2483ABF192BC5DB00F445BB /* SceneMediator */,
+				D2483ADE192BC5DC00F445BB /* SceneMediatorTests */,
+				D2483AB8192BC5DB00F445BB /* Frameworks */,
+				D2483AB7192BC5DB00F445BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2483AB7192BC5DB00F445BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2483AB6192BC5DB00F445BB /* SceneMediator.app */,
+				D2483AD7192BC5DC00F445BB /* SceneMediatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2483AB8192BC5DB00F445BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2483AB9192BC5DB00F445BB /* Foundation.framework */,
+				D2483ABB192BC5DB00F445BB /* CoreGraphics.framework */,
+				D2483ABD192BC5DB00F445BB /* UIKit.framework */,
+				D2483AD8192BC5DC00F445BB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2483ABF192BC5DB00F445BB /* SceneMediator */ = {
+			isa = PBXGroup;
+			children = (
+				D2483AC8192BC5DB00F445BB /* AppDelegate.h */,
+				D2483AC9192BC5DB00F445BB /* AppDelegate.m */,
+				D2483AF41933D06900F445BB /* SceneMediator.h */,
+				D2483AF51933D06900F445BB /* SceneMediator.m */,
+				D2483AF71933D1E700F445BB /* View */,
+				D2483AF81933D21100F445BB /* Controller */,
+				D2483AD1192BC5DB00F445BB /* Images.xcassets */,
+				D2483AC0192BC5DB00F445BB /* Supporting Files */,
+			);
+			path = SceneMediator;
+			sourceTree = "<group>";
+		};
+		D2483AC0192BC5DB00F445BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2483AC1192BC5DB00F445BB /* SceneMediator-Info.plist */,
+				D2483AC2192BC5DB00F445BB /* InfoPlist.strings */,
+				D2483AC5192BC5DB00F445BB /* main.m */,
+				D2483AC7192BC5DB00F445BB /* SceneMediator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2483ADE192BC5DC00F445BB /* SceneMediatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2483AE4192BC5DC00F445BB /* SceneMediatorTests.m */,
+				D2483ADF192BC5DC00F445BB /* Supporting Files */,
+			);
+			path = SceneMediatorTests;
+			sourceTree = "<group>";
+		};
+		D2483ADF192BC5DC00F445BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2483AE0192BC5DC00F445BB /* SceneMediatorTests-Info.plist */,
+				D2483AE1192BC5DC00F445BB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2483AF71933D1E700F445BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2483ACB192BC5DB00F445BB /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D2483AF81933D21100F445BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2483ACE192BC5DB00F445BB /* ViewControllerA.h */,
+				D2483ACF192BC5DB00F445BB /* ViewControllerA.m */,
+				D2483AEE192BC8BA00F445BB /* ViewControllerB.h */,
+				D2483AEF192BC8BA00F445BB /* ViewControllerB.m */,
+				D2483AF1192BC8CD00F445BB /* ViewControllerC.h */,
+				D2483AF2192BC8CD00F445BB /* ViewControllerC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2483AB5192BC5DB00F445BB /* SceneMediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2483AE8192BC5DC00F445BB /* Build configuration list for PBXNativeTarget "SceneMediator" */;
+			buildPhases = (
+				D2483AB2192BC5DB00F445BB /* Sources */,
+				D2483AB3192BC5DB00F445BB /* Frameworks */,
+				D2483AB4192BC5DB00F445BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SceneMediator;
+			productName = SceneMediator;
+			productReference = D2483AB6192BC5DB00F445BB /* SceneMediator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2483AD6192BC5DC00F445BB /* SceneMediatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2483AEB192BC5DC00F445BB /* Build configuration list for PBXNativeTarget "SceneMediatorTests" */;
+			buildPhases = (
+				D2483AD3192BC5DC00F445BB /* Sources */,
+				D2483AD4192BC5DC00F445BB /* Frameworks */,
+				D2483AD5192BC5DC00F445BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2483ADD192BC5DC00F445BB /* PBXTargetDependency */,
+			);
+			name = SceneMediatorTests;
+			productName = SceneMediatorTests;
+			productReference = D2483AD7192BC5DC00F445BB /* SceneMediatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2483AAE192BC5DB00F445BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Joakim Lazakis";
+				TargetAttributes = {
+					D2483AD6192BC5DC00F445BB = {
+						TestTargetID = D2483AB5192BC5DB00F445BB;
+					};
+				};
+			};
+			buildConfigurationList = D2483AB1192BC5DB00F445BB /* Build configuration list for PBXProject "SceneMediator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2483AAD192BC5DB00F445BB;
+			productRefGroup = D2483AB7192BC5DB00F445BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2483AB5192BC5DB00F445BB /* SceneMediator */,
+				D2483AD6192BC5DC00F445BB /* SceneMediatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2483AB4192BC5DB00F445BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2483AD2192BC5DB00F445BB /* Images.xcassets in Resources */,
+				D2483AC4192BC5DB00F445BB /* InfoPlist.strings in Resources */,
+				D2483ACD192BC5DB00F445BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2483AD5192BC5DC00F445BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2483AE3192BC5DC00F445BB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2483AB2192BC5DB00F445BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2483AD0192BC5DB00F445BB /* ViewControllerA.m in Sources */,
+				D2483AF61933D06900F445BB /* SceneMediator.m in Sources */,
+				D2483AF3192BC8CD00F445BB /* ViewControllerC.m in Sources */,
+				D2483AF0192BC8BA00F445BB /* ViewControllerB.m in Sources */,
+				D2483ACA192BC5DB00F445BB /* AppDelegate.m in Sources */,
+				D2483AC6192BC5DB00F445BB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2483AD3192BC5DC00F445BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2483AE5192BC5DC00F445BB /* SceneMediatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2483ADD192BC5DC00F445BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2483AB5192BC5DB00F445BB /* SceneMediator */;
+			targetProxy = D2483ADC192BC5DC00F445BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2483AC2192BC5DB00F445BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2483AC3192BC5DB00F445BB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2483ACB192BC5DB00F445BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2483ACC192BC5DB00F445BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2483AE1192BC5DC00F445BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2483AE2192BC5DC00F445BB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2483AE6192BC5DC00F445BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2483AE7192BC5DC00F445BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2483AE9192BC5DC00F445BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SceneMediator/SceneMediator-Prefix.pch";
+				INFOPLIST_FILE = "SceneMediator/SceneMediator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2483AEA192BC5DC00F445BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SceneMediator/SceneMediator-Prefix.pch";
+				INFOPLIST_FILE = "SceneMediator/SceneMediator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D2483AEC192BC5DC00F445BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SceneMediator.app/SceneMediator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SceneMediator/SceneMediator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SceneMediatorTests/SceneMediatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D2483AED192BC5DC00F445BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SceneMediator.app/SceneMediator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SceneMediator/SceneMediator-Prefix.pch";
+				INFOPLIST_FILE = "SceneMediatorTests/SceneMediatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2483AB1192BC5DB00F445BB /* Build configuration list for PBXProject "SceneMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2483AE6192BC5DC00F445BB /* Debug */,
+				D2483AE7192BC5DC00F445BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2483AE8192BC5DC00F445BB /* Build configuration list for PBXNativeTarget "SceneMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2483AE9192BC5DC00F445BB /* Debug */,
+				D2483AEA192BC5DC00F445BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2483AEB192BC5DC00F445BB /* Build configuration list for PBXNativeTarget "SceneMediatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2483AEC192BC5DC00F445BB /* Debug */,
+				D2483AED192BC5DC00F445BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2483AAE192BC5DB00F445BB /* Project object */;
+}

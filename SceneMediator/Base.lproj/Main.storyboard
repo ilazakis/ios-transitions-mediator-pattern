@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OR0-wB-z5L">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View ControllerA - View Controller A-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewControllerA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JeL-Wr-56R"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zff-BG-52I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Controller A" id="0Ky-gV-1RZ">
+                        <barButtonItem key="rightBarButtonItem" title="Go To B" style="done" id="VZ4-zg-KjB">
+                            <connections>
+                                <segue destination="ZlM-8g-3gV" kind="push" identifier="FromAToB" id="Mgo-V8-8qV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="57"/>
+        </scene>
+        <!--View ControllerB - View Controller B-->
+        <scene sceneID="Zhg-Jm-qgU">
+            <objects>
+                <viewController id="ZlM-8g-3gV" customClass="ViewControllerB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ij-Hu-JLn"/>
+                        <viewControllerLayoutGuide type="bottom" id="JGv-d1-Csk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IX5-zW-XAt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Controller B" id="2rd-co-gSS">
+                        <barButtonItem key="rightBarButtonItem" title="Go To C" style="done" id="Kku-DD-Nyq">
+                            <connections>
+                                <segue destination="f2M-zF-VUv" kind="push" identifier="FromBToC" id="p1d-jn-Kc0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JB5-xs-rLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="55"/>
+        </scene>
+        <!--View ControllerC - View Controller C-->
+        <scene sceneID="6tj-im-K2W">
+            <objects>
+                <viewController id="f2M-zF-VUv" customClass="ViewControllerC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H0G-mA-6OG"/>
+                        <viewControllerLayoutGuide type="bottom" id="JJU-uN-mEU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mz8-Ca-D0I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Controller C" id="XJD-FI-2cQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtd-Pa-Hfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032" y="57"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x9i-iS-uBG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OR0-wB-z5L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ew-m4-bqF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="LCB-Z8-Uo6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="De2-v7-cGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-185" y="57"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
